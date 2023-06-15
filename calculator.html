@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator app with basic operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 style="text-align: center; margin-top:60px; font-size: 40px;">Calculator</h2>
+
+    <div class="main">
+        <table style="text-align: center;">
+            <tr>
+                <td colspan="4"><input type="text" id="textbox"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" onclick="display('1')" value="1"></td>
+                <td><input type="button" onclick="display('2')" value="2"></td>
+                <td><input type="button" onclick="display('3')" value="3"></td>
+                <td><input type="button" onclick="display('+')" value="+"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="display('4')" value="4"></td>
+                <td><input type="button" onclick="display('5')" value="5"></td>
+                <td><input type="button" onclick="display('6')" value="6"></td>
+                <td><input type="button" onclick="display('-')" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="display('7')" value="7"></td>
+                <td><input type="button" onclick="display('8')" value="8"></td>
+                <td><input type="button" onclick="display('9')" value="9"></td>
+                <td><input type="button" onclick="display('*')" value="*"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="display('.')" value="."></td>
+                <td><input type="button" onclick="display('0')" value="0"></td>
+                <td><input type="button" onclick="calculate()" value="="></td>
+                <td><input type="button" onclick="display('/')" value="/"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick="clr()" value="Clear"></td>
+                <td colspan="2"><input type="button" onclick="Delete()" value="delete"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="calc.js"></script>
+
+
+</body>
+
+</html>
